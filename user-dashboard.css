@@ -1,0 +1,130 @@
+body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+        color: #242424;
+        background-color: #F4F6FA;
+}
+#navigation{
+    background-color: #242424;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.3em;
+    z-index: 2;
+}
+#logo:hover{
+    cursor: pointer;
+}
+.active_link{
+    border-bottom: 2px solid #D62828;
+}
+.active_booking{
+    border-bottom: 2px solid #D62828;
+    color: #D62828;
+}
+#logout{
+    position: fixed;
+    box-sizing: border-box;
+    margin: auto;
+    bottom: 50px;
+    right: 40px;
+    height: 60px;
+    font-size: 1.5em;
+    width: 60px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#logout:hover{
+    cursor: pointer;
+}
+#order_items{
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 80%;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+}
+.order_single{
+    border-radius: 10px;
+    display: grid;
+}
+.order_single p{
+    padding: 10px 0 0 20px;
+    height: 40px;
+    background-color: #D62828;
+    color: white;
+}
+.order_container{
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: scroll;
+    background-color: #FDFDFD;
+}
+.cart_single{
+    width: 80%;
+    display: flex;
+    margin: 10px 20px 10px 20px;
+    justify-content: space-between;
+}
+#nav_nav{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    height: 35px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.pending_book{
+    padding-top: 40px;
+    margin-left: 10%;
+    display: grid;
+    grid-gap: 2em;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+}
+.book_item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 200px;
+    max-height: 600px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.book_image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.first_book{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+.view_book{
+    font-weight: bold;
+    color: #D62828;
+}
+.book_header{
+    border-radius: 5px;
+    display: block;
+    background-color: #D62828;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
